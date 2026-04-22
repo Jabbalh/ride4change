@@ -1,18 +1,19 @@
 <script setup>
+const baseUrl = `${import.meta.env.BASE_URL}`;
 const races = [
   {
     date: '19 avril 2026',
     title: 'Le Mans',
     description: 'Une petite course sur un petit circuit',
     circuit:
-      '/la_mans.jpeg',
+      `${baseUrl}la_mans.jpeg`,
   },
   {
     date: '12 novembre 2025',
     title: 'Pôle Mécanique Alès Cévennes.',
     description: 'Week-end ensoleillé à Alès pour le PHS DAY du 8 novembre.',
     circuit:
-      '/ales.PNG',
+    `${baseUrl}ales.PNG`,
   },
 ]
 </script>

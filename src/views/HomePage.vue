@@ -5,6 +5,11 @@ const socialLinks = [
   { name: 'Facebook', url: 'https://www.facebook.com/' },
   { name: 'TikTok', url: 'https://www.tiktok.com/' },
 ]
+const baseUrl = `${import.meta.env.BASE_URL}`;
+const moto2 = `${baseUrl}moto2.jpg`;
+const moto1 = `${baseUrl}moto1.jpg`;
+const moto3 = `${baseUrl}moto3.jpg`;
+const partenaire1 = `${baseUrl}partenaire1.png`;
 </script>
 
 <template>
@@ -25,7 +30,7 @@ const socialLinks = [
     </article>
     <div class="image-box">
     <img
-      src="/moto2.jpg"
+      :src="moto2"
       alt="Pilote en action"
       class="story-image"
     />
@@ -33,7 +38,7 @@ const socialLinks = [
 
     <div class="image-box">
     <img
-      src="/moto1.jpg"
+      :src="moto1"
       alt="la course"
       class="story-image"
     />
@@ -55,7 +60,7 @@ const socialLinks = [
     </article>
     <div class="image-box">
     <img
-      src="/moto3.jpg"
+      :src="moto3"
       alt="Moto sur circuit"
       class="story-image"
     />
@@ -63,7 +68,7 @@ const socialLinks = [
 
     <div class="image-box">
     <img
-        src="/partenaire1.png"
+        :src="partenaire1"
         alt="Partenaire"
         class="story-image"
     />
